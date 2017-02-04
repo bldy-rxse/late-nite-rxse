@@ -3,7 +3,7 @@ email: sonicthehamilton.ar@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The band of renegades release their 1st EP premiering new singles every Tuesday & Friday til March 2017.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lateniterxse.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
