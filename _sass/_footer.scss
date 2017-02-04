@@ -1,0 +1,40 @@
+.bldy-footer {
+	background: #000000;
+	padding: 10rem 0;
+	.content {
+		.footer_brand {
+			margin: auto;
+			width: 9.2rem;
+
+			a {
+				cursor: pointer;
+				display: block;
+				height: 100%;
+
+				img {
+					width: 9.2rem;
+				}
+			}
+		}
+
+		.footer_socials {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			margin-top: 8rem;
+
+			li {
+				display: inline-flex;
+				margin: 0 3rem;
+
+				a {
+					font-family: 'Anonymous Pro', monospace;
+					font-size: 2rem;
+					color: #FFFFFF;
+					cursor: pointer;
+					padding: 2rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+}
+
+body, html {
+	height: 100%;
+  background: #000000;
+}
+
+.content {
+	margin: 0 auto;
+  max-width: 100rem;
+  width: 90%;
+}
+
+.main {
+	position: absolute;
+    
+    transition: background .5s ease;
+    background: #EC316D;
+    width: 100vw;
+    z-index: 1000;
+}
+
+
+@media screen and (max-width: $tablet-portrait) {
+    .main {
+      margin-top: -2px;
+    }
+}

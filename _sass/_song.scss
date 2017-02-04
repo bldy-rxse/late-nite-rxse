@@ -1,0 +1,243 @@
+.song_body {
+	height: 100vh;
+	.content {
+		overflow: hidden;
+		padding: 0 3rem;
+		position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+		.album_cover {
+			width: 50%;
+			background: #FFFFFF;
+			border-radius: 8px;
+			-webkit-box-shadow: 0px 25px 38px -13px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 25px 38px -13px rgba(0,0,0,0.5);
+			box-shadow: 0px 25px 38px -13px rgba(0,0,0,0.5);
+			float: left;
+			margin-bottom: 4rem;
+
+			&:after {
+				content: "";
+				display: block;
+				padding-bottom: 100%;
+			}
+
+			&.ko-flaire {
+				background: url(/img/Flaire-KO.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position-x: 50%;
+				background-position-y: 50%;
+			}
+
+			&.thrill-hanz {
+				background: url(/img/hanz-thrill.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position-x: 50%;
+				background-position-y: 50%;
+			}
+		}
+
+		.album_info {
+			float: left;
+			margin-left: 10rem;
+			margin-top: 1.5rem;
+			width: 39rem;
+
+			.track_number {
+				margin: 0;
+				display: inline-block;
+				border-bottom: 2px solid #000000;
+				margin-bottom: 2.6rem;
+				font-size: 4rem;
+			}
+
+			.artist_name {
+				margin: 0;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				font-size: 4rem;
+
+				a {
+					color: #000000;
+					text-decoration: none;
+					transition: all ease 0.5s;
+
+					&:hover {
+						color: #FFFFFF;
+					}
+				}
+			}
+
+			.track_title {
+				margin: auto;
+				font-weight: 400;
+			}
+
+			.track_credits {
+				margin: 2.6rem 0;
+				line-height: 1.7;
+			}
+
+			.track_audio {
+				overflow: hidden;
+				.button {
+					float: left;
+					height: 52px;
+			    width: 52px;
+			    border: 2px solid #000000;
+			    border-radius: 50%;
+			    background: transparent;
+			    cursor: pointer;
+			    transition: all ease 0.5s;
+
+			    &:hover {
+			    	border: 2px solid #FFFFFF;
+			    	fill: #FFFFFF;
+			    	.icon {
+			    		fill: #FFFFFF !important;
+			    	}
+			    }
+
+			    .icon {
+			    	width: 18px;
+			    	height: 18px;
+			    	transition: fill 0.5s ease;
+			    	margin-top: 3px;
+			    	margin-left: 2px;
+			    	
+			    }
+
+				}
+
+				.play_pause_txt {
+					float: left;
+					p {
+						text-transform: uppercase;
+						font-weight: 700;
+						margin: 0;
+						line-height: 2.8;
+    				margin-left: 1.4rem;
+    				transition: all ease 0.5s;
+					}
+				}
+			}
+
+			.social_links {
+				margin: 0;
+				padding: 0;
+				margin-top: 2.4rem;
+
+				li {
+					display: inline-block;
+
+					a {
+						color: #000000;
+						font-size: 1.6rem;
+						font-family: 'Anonymous Pro', monospace;
+						margin-right: 2.4rem;
+						transition: all ease 0.5s;
+
+						&:hover {
+							color: #FFFFFF;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+   .song_body {
+   	height: auto;
+    margin: 10rem 0;
+
+   	.content {
+   		overflow: auto;
+	    padding: 0 2rem;
+	    position: relative;
+	    top: 0;
+	    transform: translateY(0);
+	    width: auto;
+
+	    .album_cover {
+	    	width: 100%;
+	    }
+
+	    .album_info {
+	    	margin-left: 0;
+	    	margin-top: 1.5rem;
+    		width: 100%
+	    }
+   	}
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1088px ) {
+	.song_body {
+   	height: auto;
+    margin: 10rem 0;
+
+   	.content {
+   		overflow: auto;
+	    padding: 0 2rem;
+	    position: relative;
+	    top: 0;
+	    transform: translateY(0);
+	    width: auto;
+
+	    .album_cover {
+	    	width: 45%;
+	    	margin-right: 0.6rem;
+	    }
+
+	    .album_info {
+	    	margin-left: 0;
+	    	margin-top: 0.5rem;
+	    	padding: 0 1.5rem;
+    		width: 50%;
+
+    		.track_number {
+    			font-size: 4rem;
+    		}
+
+    		.artist_name {
+    			font-size: 4rem;
+    		}
+
+    		.track_title {
+    			font-size: 2.4rem;
+    		}
+
+    		.track_audio {
+    			.button {
+    				height: 40px;
+    				width: 40px;
+    			}
+    		}
+
+    		.track_credits {
+    			font-size: 1.6rem;
+    		}
+
+    		.social_links {
+    			margin-top: 1.4rem;
+    		}
+	    }
+   	}
+   }
+}
+
+@media (min-width: 1089px ) {
+	.song_body {
+		.content {
+			.album_cover {
+				width: 43rem;
+				height: 43rem;
+			}
+		}
+	}
+}

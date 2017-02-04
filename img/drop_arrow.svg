@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40.5 29" style="enable-background:new 0 0 40.5 29;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#filter-2);}
+	.st1{fill:#FFFFFF;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="200%" id="filter-2" width="200%" x="-50%" y="-50%">
+	<feOffset  dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"></feGaussianBlur>
+	<feColorMatrix  in="shadowBlurOuter1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.77 0"></feColorMatrix>
+</filter>
+<title>Combined Shape</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Landing-Page" transform="translate(-682.000000, -574.000000)">
+		<g id="Header">
+			<g id="Combined-Shape">
+				<g class="st0">
+					<path id="path-1_2_" d="M702.2,598c0.3,0,0.5-0.1,0.7-0.3l17-17c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0l-16.3,16.3
+						L686,579.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l17,17C701.7,597.9,702,598,702.2,598z"/>
+				</g>
+				<g>
+					<path id="path-1_1_" class="st1" d="M702.2,598c0.3,0,0.5-0.1,0.7-0.3l17-17c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0
+						l-16.3,16.3L686,579.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l17,17C701.7,597.9,702,598,702.2,598z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

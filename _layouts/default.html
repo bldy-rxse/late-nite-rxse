@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body ng-app="app" {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
+	{{content}}
+
+
+
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+	<script type="text/javascript" src="/js/soundmanager2-jsmin.js"></script>
+	<script src="https://use.fontawesome.com/4c0a4bb053.js"></script>
+	<script type="text/javascript" src="/js/nav_scroll.js"></script>
+	<script type="text/javascript" src="/js/smooth_scroll.js"></script>
+	<script type="text/javascript" src="/js/in-view.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.scrollie.min.js"></script>
+	<script type="text/javascript" src="/js/song_scroll.js"></script>
+	<script type="text/javascript" src="/js/bldy_decoder.js"></script>
+	<script>
+		$.getScript("/js/soundmanager2-jsmin.js")
+
+	  SC.initialize({
+	    client_id: 'a72bd8c69a4f38d871899c7e42928ae6',
+	  });
+
+	  var app = angular.module('app', ['plangular'])
+    .config(function(plangularConfigProvider){
+      plangularConfigProvider.clientId = 'a72bd8c69a4f38d871899c7e42928ae6';
+    });
+
+		
+	</script>
+</body>
+</html>

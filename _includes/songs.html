@@ -1,0 +1,30 @@
+{% for song in site.data.songs %}
+<div plangular="{{song.song_link}}" data-background-color="#{{song.color}}" class="song_body">
+	<div class="content">
+		<div class="album_cover {{song.artwork_name}}"></div>
+		<div class="album_info">
+			<h1 class="track_number">0{{song.number}}</h1>
+			<h1 class="artist_name"><a href="{{song.artist_link}}">{{song.artist}}</a></h1>
+			<h2 class="track_title">{{song.title}}</h2>
+			<p class="track_credits">{{song.credits}}</p>
+			<div class="track_audio">
+				<button class="button" ng-click="playPause()"
+				title="Play/Pause"
+				class="flex-none h2 mr2 button button-transparent button-grow rounded">
+				<svg ng-if="player.playing !== track.src" class="icon" data-icon="play" viewBox="0 0 32 32" width="32" height="32" style="fill:currentcolor"><path d="M4 4 L28 16 L4 28 z "></path></svg>
+				<svg ng-if="player.playing === track.src" class="icon" data-icon="pause" viewBox="0 0 32 32" width="32" height="32" style="fill:currentcolor"><path d="M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z "></path></svg>
+			</button>
+			<div class="play_pause_txt">
+				<p ng-if="player.playing !== track.src">Play</p>
+				<p ng-if="player.playing === track.src">Pause</p>
+			</div>
+		</div>
+
+		<ul class="social_links">
+			<li><a href="{{song.song_link}}">Soundcloud</a></li>
+			<li><a href="{{song.genius_link}}">Lyrics</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+{% endfor %}

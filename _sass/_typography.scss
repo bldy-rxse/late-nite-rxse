@@ -1,0 +1,72 @@
+// Font weights
+$bold: 700;
+$regular: 400;
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-weight: $bold;
+  src: url('../fonts/AnonymousPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-weight: $regular;
+  src: url('../fonts/AnonymousPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rift';
+  src: url('../fonts/Rift-Regular.otf') format('opentype');
+}
+
+
+html {
+	font-size: 62.5%;
+}
+
+$family: 'Anonymous Pro', Helvetica Neue, Arial, monospace;
+
+h1, %h1 {
+  font-size: 4.8rem;
+  font-weight: $regular;
+  font-family: $family;
+  margin: 0;
+}
+
+h2, %h2 {
+  font-family: $family;
+  font-size: 3.2rem;
+  font-weight: $bold;
+  margin-bottom: 1rem;
+}
+
+h3, %h3 {
+  font-size: 2.6rem;
+  font-weight: $bold;
+  font-family: $family;
+}
+
+h4, %h4 {
+  font-size: 2.2rem;
+  font-family: $family;
+  font-weight: $bold;
+}
+
+h5, %h5 {
+  font-size: 2rem;
+  font-family: $family;
+  line-height: 1;
+  font-weight: $bold;
+}
+
+h6, %h6 {
+  font-size: 1.8rem;
+  font-family: $family;
+  font-weight: $regular;
+}
+
+p, .p {
+  font-size: 1.8rem;
+  font-weight: $regular;
+  font-family: $family;
+}

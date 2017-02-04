@@ -1,0 +1,80 @@
+.hero {
+	height: 100vh;
+	z-index: 0;
+	.bldy_bg {
+		position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom:  0;
+    left: 0;
+    right: 0;
+    background: url(/img/hero_img.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    height: 100%;
+	}
+
+	.overlay {
+		&.rxse_fade {
+			height: 22rem;
+	    z-index: 2;
+	    position: absolute;
+	    width: 100%;
+	    bottom: 0;
+	    background: -webkit-linear-gradient(top, transparent 0%, #ec2660 100%);
+	    background: linear-gradient(to bottom, transparent 0%, #ec2660 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ec2660',GradientType=0 );
+		}
+	}
+
+	.hero_info {
+    position: absolute;
+    z-index: 5;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 36%;
+    top: 47%;
+
+    h1 {
+    	color: #FFFFFF;
+      font-family: 'Rift', sans-serif;
+      font-size: 4.2rem;
+      line-height: 58px;
+    	text-align: center;
+      display: none;
+      position: relative;
+
+      .encoded {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+	}
+
+	.down_arrow {
+		position: absolute;
+		-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 60px;
+    z-index: 5;
+    cursor: pointer;
+
+    img {
+    	width: 3.5rem;
+    }
+	}
+}
+
+@media screen and (max-width: $phone-portrait) {
+    .hero {
+      .hero_info {
+        h1 {
+          font-size: 3.2rem;
+        }
+          
+      }
+    }
+}
