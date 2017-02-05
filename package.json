@@ -1,7 +1,7 @@
 {
   "name": "late-nite-rxse",
   "version": "1.0.0",
-  "description": "Hub featuring the new songs from the upcoming EP, LateNiteRxse",
+  "description": "LateNiteRxse is an official Bldy Rxse site.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
