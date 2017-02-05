@@ -19,13 +19,24 @@
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if page.twitter_image %}<meta name="twitter:image" content="{{ page.twitter_image | prepend: site.baseurl | prepend: site.url }}">{% endif %}
 
-  <meta property="fb:app_id" content="1350569341674398" />
-  <meta property="og:site_name" content="LateNiteRxse">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:type" content="website">
-  {% if page.facebook_image %}<meta property="og:image" content="{{ page.facebook_image | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+
+  {% if site.facebook %}
+    {% if site.facebook.admins %}
+      <meta property="fb:admins" content="{{ site.facebook.admins }}">
+    {% endif %}
+    {% if site.facebook.publisher %}
+      <meta property="article:publisher" content="{{ site.facebook.publisher }}">
+    {% endif %}
+    {% if site.facebook.app_id %}
+      <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
+    {% endif %}
   {% endif %}
-  <meta property="og:url" content="{{ site.url }}">
 
 </head>

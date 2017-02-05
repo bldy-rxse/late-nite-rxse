@@ -10,6 +10,9 @@ github_username: bldy-rxse
 tracking:
   google_analytics_id: 'UA-90595388-1'
 
+facebook:
+  app_id: 1350569341674398
+
 # Build settings
 markdown: kramdown
 theme: minima
