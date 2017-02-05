@@ -21,8 +21,8 @@
 
   <meta property="fb:app_id" content="1350569341674398" />
   <meta property="og:site_name" content="LateNiteRxse">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
   {% if page.facebook_image %}<meta property="og:image" content="{{ page.facebook_image | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
