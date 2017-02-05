@@ -12,26 +12,11 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@bldyrxse">
   <meta name="twitter:creator" content="@bldyrxse">
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
-  {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
-  {% endif %}
-  {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  {% endif %}
-  {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
-  {% else %}
-    <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-  {% if page.twitter_image %}
-    <meta name="twitter:image:src" content="{{ site.url }}/img/socials/twitter_promo_image.png{{ page.twitter_image }}">
-  {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/logo.png">
-  {% endif %}
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.twitter_image %}<meta name="twitter:image" content="{{ page.twitter_image | prepend: site.baseurl | prepend: site.url }}">{% endif %}
 
 </head>
