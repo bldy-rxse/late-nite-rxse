@@ -36,5 +36,19 @@
 				}
 			}
 		}
+
+		.credit_roll {
+			color: #C0C0C0;
+			margin-top: 10.8rem;
+			text-align: center;
+
+
+			a {
+				font-weight: $bold;
+				color: #FFFFFF;
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
 	}
 }
