@@ -20,17 +20,10 @@ body, html {
 }
 
 .main {
-	position: absolute;
-    
-    transition: background .5s ease;
-    background: #EC316D;
-    width: 100vw;
-    z-index: 1000;
-}
-
-
-@media screen and (max-width: $tablet-portrait) {
-    .main {
-      margin-top: -2px;
-    }
+	position: absolute;  
+  transition: background .5s ease;
+  background: #EC316D;
+  width: 100vw;
+  z-index: 1000;
+  margin-top: -2px;
 }
