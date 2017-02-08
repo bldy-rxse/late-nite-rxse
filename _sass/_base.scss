@@ -6,6 +6,7 @@ html {
 
 body {
 	margin: 0;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -25,5 +26,4 @@ body, html {
   background: #EC316D;
   width: 100vw;
   z-index: 1000;
-  margin-top: -2px;
 }
