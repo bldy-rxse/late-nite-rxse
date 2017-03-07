@@ -5,3 +5,10 @@ inView('.song_body').on('enter', function(el){
 });
 
 inView.threshold(0.5);
+
+$(window).resize(function(){
+	var win = $(this);
+	if (win.width() <= 767) {
+		inView.threshold(0);
+	}
+});
