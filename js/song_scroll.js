@@ -11,4 +11,8 @@ $(window).resize(function(){
 	if (win.width() <= 767) {
 		inView.threshold(0);
 	}
+
+	if (win.width() >= 768) {
+		inView.threshold(0.5);
+	}
 });
