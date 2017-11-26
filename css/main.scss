@@ -5,7 +5,7 @@
 @charset "utf-8";
 
 //Media Queries
-
+$xs-phone-portrait: 320px;
 $phone-portrait:   480px;
 $phone-landscape:  640px;
 $tablet-portrait:  768px;
@@ -13,6 +13,19 @@ $tablet-landscape: 1024px;
 $desktop:          1440px;
 $xl-desktop:       1920px;
 $xxl-desktop:      10000px;
+
+//Fonts
+$family: 'Anonymous Pro', Helvetica Neue, Arial, monospace;
+$alt-font: 'Rift', Helvetica Neue, Arial, monospace;
+
+// Font weights
+$bold: 700;
+$regular: 400;
+
+
+//Colors
+$white: #FFFFFF;
+$bldy-pink: #EC316D;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -26,4 +39,6 @@ $xxl-desktop:      10000px;
 			'navbar',
 			'hero',
 			'footer',
-			'song';
+			'song',
+			'video_hero',
+			'modal_video';

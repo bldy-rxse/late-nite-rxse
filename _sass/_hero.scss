@@ -16,19 +16,6 @@
     height: 100%;
 	}
 
-	.overlay {
-		&.rxse_fade {
-			height: 22rem;
-	    z-index: 2;
-	    position: absolute;
-	    width: 100%;
-	    bottom: 0;
-	    background: -webkit-linear-gradient(top, transparent 0%, #ec2660 100%);
-	    background: linear-gradient(to bottom, transparent 0%, #ec2660 100%);
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ec2660',GradientType=0 );
-		}
-	}
-
 	.hero_info {
     position: absolute;
     z-index: 5;
