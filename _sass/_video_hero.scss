@@ -1,0 +1,141 @@
+.video_hero {
+	height: 100vh;
+	position: relative;
+	z-index: 0;
+
+	.hero_copy {
+		position: absolute;
+		z-index: 100;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		.logo {
+			background: url(/img/thrill.png) center center no-repeat;
+			background-size: 100%;
+			display: block;
+			height: 17.4rem;
+			width: 100%;
+
+			@include media-query($tablet-portrait) {
+				height: 13.4rem;
+			}
+		}
+
+		h4 {
+			font-family: $alt-font;
+			text-transform: uppercase;
+			color: $white;
+			font-size: 2.4rem;
+			margin: 0;
+
+			@include media-query($tablet-portrait) {
+				font-size: 1.8rem;
+			}
+		}
+
+		.bldy-vid-btn {
+			background-color: $white;
+			color: $bldy-pink;
+			cursor: pointer;
+			font-size: 2rem;
+			font-family: $family;
+			font-weight: $bold;
+			border: none;
+			border-radius: 200px;
+			padding: 1rem 1.8rem;
+			margin: 4rem 0;
+			transition: all ease-in-out 0.2s;
+
+			&:hover {
+				color: $white;
+				background-color: $bldy-pink;
+			}
+
+			@include media-query($tablet-portrait) {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.drop_down_btn {
+		color: $white;
+		font-family: $family;
+		font-size: 1.6rem;
+		font-weight: $bold;
+		position: absolute;
+		text-decoration: none;
+		text-transform: uppercase;
+		z-index: 100;
+		left: 50%;
+		bottom: 20%;
+		transform: translate(-50%, 80%);
+
+		&:after {
+			content: "";
+			display: block;
+			background: url(/img/down_arrow.svg) center center no-repeat;
+			height: 3rem;
+			width: 100%;
+			background-size: 100% auto;
+			margin-top: 1.2rem;
+		}
+	}
+
+	.navbar-copy {
+		left: 50%;
+		top: 5rem;
+		position: absolute;
+		transform: translate(-50%, 70%);
+		text-align: center;
+		z-index: 100;
+
+		p {
+			color: $white;
+			margin: 0;
+		}
+
+		@include media-query($tablet-portrait) {
+			top: 20.4%;
+
+			p {
+				font-size: 1.4rem;
+			}
+		}
+
+		@include media-query($xs-phone-portrait) {
+			display: none;
+		}
+	}
+
+	.vid-hero-bg {
+		background: url(/img/video-hero-img.jpg) center center no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100vh;
+		z-index: -100;
+
+		.fullscreen_bg_video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			@media (min-aspect-ratio: 16/9) { 
+				height: 300%;
+				top: -100%;
+			}
+
+			@media (max-aspect-ratio: 16/9) { 
+				width: 300%;
+				left: -100%;
+			}
+
+			@include media-query($tablet-portrait) {
+				display: none;
+			}
+		}
+	}
+}

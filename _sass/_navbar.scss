@@ -18,6 +18,10 @@
 				 	width: 7.6rem;
 				 }
 				}
+
+				@include media-query($tablet-portrait) {
+					width: auto;
+				}
 			}
 
 			.share_area {
@@ -36,11 +40,28 @@
 
 						p {
 							color: #FFFFFF;
+
+							@include media-query($tablet-portrait) {
+								font-size: 1.4rem;
+							}
 						}
 
 						a {
 							cursor: pointer;
 							display: block;
+							text-decoration: none;
+
+							.social-counter {
+								color: $white;
+								font-family: $family;
+								font-size: 1.8rem;
+								margin-left: 0.6rem;
+								text-decoration: none;
+
+								@include media-query($tablet-portrait) {
+									font-size: 1.4rem;
+								}
+							}
 						}
 
 						.fa {
@@ -49,9 +70,17 @@
 								color: #FFFFFF;
 								cursor: pointer;
 								transition: all ease 0.5s;
+
+								@include media-query($tablet-portrait) {
+									font-size: 1.4rem;
+								}
 							}
 						}
 					}
+				}
+
+				@include media-query($tablet-portrait) {
+					width: auto;
 				}
 			}
 		}
